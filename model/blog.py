@@ -1,4 +1,3 @@
-from typing import List
 from pydantic import BaseModel
 
 class Chapter(BaseModel):
@@ -8,6 +7,6 @@ class Chapter(BaseModel):
 
 class BlogModel(BaseModel):
     title: str
-    chapters: List[Chapter]
+    chapters: list[Chapter]
     author: str
     tag: list
